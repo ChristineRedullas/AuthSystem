@@ -37,6 +37,7 @@
             const currentPage = location.pathname;
             $('.nav-tabs li a').each(function () {
                 const $this = $(this);
+                // What is line 41 doing? how to have it link? ==/== ?
                 if (currentPage.toLowerCase().indexOf($this.attr('href').toLowerCase()) != -1) {
                     $this.addClass('active');
                 }
